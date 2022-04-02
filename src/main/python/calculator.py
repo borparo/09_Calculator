@@ -16,7 +16,6 @@ class Calculator(QWidget):
     def __init__(self, parent=main_window):
         super(Calculator, self).__init__(parent)
         self.setWindowTitle("QtCalculator")
-        self.setWindowFlags(self.windowFlags() ^ Qt.WindowContextHelpButtonHint)
 
         self.values = deque()
         self.operands = deque()
