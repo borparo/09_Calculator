@@ -77,7 +77,7 @@ class Calculator(QWidget):
     def create_connections(self):
         for button in self.buttons:
             if button.text() == "C":
-                button.clicked.connect(self.clear_result_field)
+                button.clicked.connect(self.reset)
             elif button.text() == "/" or button.text() == "*" or button.text() == "-" or button.text() == "+":
                 button.clicked.connect(self.operation)
             elif button.text() == "=":
@@ -89,12 +89,12 @@ class Calculator(QWidget):
             else:
                 button.clicked.connect(self.type_value)
 
-    def clear_result_field(self):
+    def reset(self):
         """
-        Clears the result_field and queues of the app.
+        Resets calculator to init state.
         """
         self.result = 0
-        self.result_field.setText("0")
+        self.result_field.setText(str(self.result))
         self.add_digit_state = True
         self.values.clear()
         self.operands.clear()
