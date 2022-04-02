@@ -1,6 +1,6 @@
 import sys
 from fbs_runtime.application_context.PySide2 import ApplicationContext
-from src.main.python.calculator import Calculator
+from calculator import Calculator
 
 if __name__ == '__main__':
     appctxt = ApplicationContext()  # 1. Instantiate ApplicationContext
