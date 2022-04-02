@@ -1,13 +1,9 @@
-from fbs_runtime.application_context.PySide2 import ApplicationContext
-from PySide2.QtWidgets import QMainWindow
-
 import sys
-
+from fbs_runtime.application_context.PySide2 import ApplicationContext
 from src.main.python.calculator import Calculator
 
 if __name__ == '__main__':
     appctxt = ApplicationContext()  # 1. Instantiate ApplicationContext
-    print(appctxt.get_resource())
     stylesheet = appctxt.get_resource('calculator.qss')
     appctxt.app.setStyleSheet(open(stylesheet).read())
     window = Calculator()
