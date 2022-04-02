@@ -1,0 +1,87 @@
+/* Calculator 0.1 2021 Default Style */
+
+QWidget{
+    background-color:#4d4d4d;
+    color: white;
+    font-family: Century Gothic, Verdana, sans-serif;
+}
+
+QPushButton{
+    background-color: #333;
+    border-color: black;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-size:12pt;
+}
+
+QPushButton:hover{
+background-color: #555;
+border-color: gray;
+}
+
+QPushButton:pressed{
+    background-color: #2a2a2a;
+    border-color: white;
+}
+
+/*Clear Button*/
+
+QPushButton#clear{
+    color: white;
+    background-color: #de7821;
+    font-weight: 600;
+    font-size: 14pt;
+    border-color: #864512;
+}
+
+QPushButton#clear:hover{
+    color: white;
+    background-color: #debb55;
+    font-weight: 600;
+    font-size: 14pt;
+    border-color: #866032;
+}
+
+QPushButton#clear:pressed{
+    color: white;
+    background-color: #ab5512;
+    font-weight: 600;
+    font-size: 14pt;
+    border-color: #553512;
+}
+
+
+/* Equal Button*/
+QPushButton#equal{
+    color: white;
+    background-color: #34dd55;
+    font-weight: 600;
+    font-size: 14pt;
+    border-color: #55aa32;
+}
+
+QPushButton#equal:hover{
+    color: white;
+    background-color: #44eb88;
+    font-weight: 600;
+    font-size: 14pt;
+    border-color: #99aa55;
+}
+
+QPushButton#equal:pressed{
+    color: white;
+    background-color: #12ba35;
+    font-weight: 600;
+    font-size: 14pt;
+    border-color: #3a993a;
+}
+
+/* Value Line */
+QLineEdit#result_field{
+    font-size: 28pt;
+    font-weight:500;
+    color: #f5f5f5;
+    border-radius: 5px;
+    background-color: #282828
+}
+
